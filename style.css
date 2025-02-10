@@ -18,9 +18,33 @@ a{
 .bg-corp{
     background-color: var(--color-corp);
 }
-
-
+.fs-title{
+    font-size: clamp(1rem, 0.575rem + 2.125vw, 3.125rem);
+}
+.text-balance{
+    text-wrap: balance;
+}
+.bordered-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.w-max-content-lg{
+    width: max-content;
+}
 /*main styles*/
+.btn-primary, .btn-primary:active, .btn-primary:focus-visible, :not(.btn-check)+.btn:active {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    background: var(--color-corp);
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    padding: 12px 50px;
+    width: fit-content;
+}
+.btn-primary:hover{
+    background: white;
+    color: var(--color-corp);
+}
 .dropdown-toggle::after{
     display: none;
 }
@@ -42,13 +66,40 @@ a{
 .form-control:focus, .navbar-toggler:focus {
     box-shadow: unset;
 }
-
-
+.banner-info-box{
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 40%;
+}
+.catalog{
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+.catalog a {
+    transition: all 0.3s ease;
+}
+.catalog a:hover {
+    color: var(--color-corp);
+    font-weight: 700;
+}
+.custom-transform.show{
+    transform: unset !important;
+    inset: 0px auto auto 105% !important;
+}
 
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
-        padding: 0 80px;
+        padding: 0 70px;
+    }
+}
+@media(max-width: 1200px) {
+    .btn-primary{
+        padding: 8px 30px;
+    }
+    .banner-info-box {
+        height: 100%;
+        width: 50%;
     }
 }
 @media(max-width: 990px){
@@ -61,6 +112,9 @@ a{
     .container-fluid {
         padding: 0 60px;
     }
+    .w-max-content-lg {
+        width: unset;
+    }
 }
 @media(max-width: 768px){
     .container-fluid {
@@ -70,6 +124,23 @@ a{
 @media(max-width: 576px) {
     .container-fluid {
         padding: 0 30px;
+    }
+    .banner-info-box {
+        height: fit-content;
+        width: 100%;
+        top: unset;
+        bottom: 0;
+        transform: unset;
+    }
+    .btn-primary {
+        padding: 5px 25px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .navbar-toggler-icon{
+        height: 20px;
+        width: 20px;
     }
 }
 @media(max-width: 420px) {
