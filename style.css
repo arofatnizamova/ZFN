@@ -3,6 +3,8 @@
     --ff-inter: "Inter", sans-setif;
     --ff-montserrat: "Montserrat", sans-serif;
     --color-corp: #046381;
+    --color-dark-grey: #3a3a3a;
+    --color-light-grey: #F6F6F6;
 }
 body{
     font-family: var(--ff-inter);
@@ -18,8 +20,26 @@ a{
 .bg-corp{
     background-color: var(--color-corp);
 }
+.bg-grey-dark{
+    background: var(--color-dark-grey);
+}
+.bg-light-grey{
+    background: var(--color-light-grey);
+}
+.text-corp{
+    color: var(--color-corp);
+}
 .fs-title{
     font-size: clamp(1rem, 0.575rem + 2.125vw, 3.125rem);
+}
+.fs-paragraph{
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+.fs-paragraph-2{
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+.fs-section-title{
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
 }
 .text-balance{
     text-wrap: balance;
@@ -28,8 +48,26 @@ a{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.w-fit-content{
+    width: fit-content;
+}
 .w-max-content-lg{
     width: max-content;
+}
+.h-lg-70{
+    height: 70%;
+}
+.one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.four-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*main styles*/
 .btn-primary, .btn-primary:active, .btn-primary:focus-visible, :not(.btn-check)+.btn:active {
@@ -44,6 +82,9 @@ a{
 .btn-primary:hover{
     background: white;
     color: var(--color-corp);
+}
+.btn-primary-long{
+    padding: 10px 100px;
 }
 .dropdown-toggle::after{
     display: none;
@@ -86,7 +127,22 @@ a{
     transform: unset !important;
     inset: 0px auto auto 105% !important;
 }
-
+.catalog-link{
+    overflow: hidden;
+}
+.catalog-link img {
+    transition: all 0.3s ease;
+}
+.catalog-link:hover img{
+    transform: scale(1.1);
+}
+.catalog-info-box{
+    bottom: 0;
+    z-index: 2;
+}
+.catalog-info-box-height{
+    height: 115px;
+}
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
@@ -141,6 +197,9 @@ a{
     .navbar-toggler-icon{
         height: 20px;
         width: 20px;
+    }
+    .catalog-info-box-height {
+        height: 80px;
     }
 }
 @media(max-width: 420px) {
