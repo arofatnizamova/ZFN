@@ -5,6 +5,7 @@
     --color-corp: #046381;
     --color-dark-grey: #3a3a3a;
     --color-light-grey: #F6F6F6;
+    --color-light-blue: rgba(163, 188, 197, 0.5);
 }
 body{
     font-family: var(--ff-inter);
@@ -13,6 +14,9 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+.ff-mont{
+    font-family: var(--ff-montserrat);
 }
 .container-fluid{
     padding: 0 100px;
@@ -26,6 +30,9 @@ a{
 .bg-light-grey{
     background: var(--color-light-grey);
 }
+.bg-light-blue{
+    background: var(--color-light-blue);
+}
 .text-corp{
     color: var(--color-corp);
 }
@@ -37,6 +44,9 @@ a{
 }
 .fs-paragraph-2{
     font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+.fs-paragraph-3{
+    font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
 }
 .fs-section-title{
     font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
@@ -113,6 +123,9 @@ a{
     height: 80%;
     width: 40%;
 }
+.banner-info-box-2{
+    width: 50%;
+}
 .catalog{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
@@ -142,6 +155,36 @@ a{
 }
 .catalog-info-box-height{
     height: 115px;
+}
+.card-hover{
+    background: white;
+    transition: all 0.3s ease;
+}
+.card-hover:hover{
+    background: var(--color-corp);
+    color: white;
+}
+.card-hover img {
+    width: 100px;
+    height: 100px;
+}
+.card-hover:hover img{
+    transition: all 0.3s ease;
+}
+.card-hover:hover img{
+    filter: contrast(0%) brightness(2);
+}
+.breadcrumb{
+   margin-bottom: 1.5rem;
+}
+.slider-next, .slider-prev{
+    transition: all 0.2s ease;
+}
+.slider-next:hover, .slider-prev:hover{
+   opacity: 0.5;
+}
+.card-slider-h{
+    height: 210px !important;
 }
 /*breackpoints*/
 @media(max-width: 1650px){
@@ -176,6 +219,9 @@ a{
     .container-fluid {
         padding: 0 40px;
     }
+    .h-md-300 {
+        height: 300px;
+    }
 }
 @media(max-width: 576px) {
     .container-fluid {
@@ -187,6 +233,12 @@ a{
         top: unset;
         bottom: 0;
         transform: unset;
+    }
+    .banner-info-box-2 {
+        width: 70%;
+        top: 50%;
+        bottom: unset;
+        transform: translateY(-50%);
     }
     .btn-primary {
         padding: 5px 25px;
@@ -201,6 +253,7 @@ a{
     .catalog-info-box-height {
         height: 80px;
     }
+    
 }
 @media(max-width: 420px) {
     .container-fluid {
