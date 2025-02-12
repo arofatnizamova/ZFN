@@ -39,6 +39,9 @@ a{
 .fs-title{
     font-size: clamp(1rem, 0.575rem + 2.125vw, 3.125rem);
 }
+.fs-title-2{
+    font-size: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
+}
 .fs-paragraph{
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
@@ -186,6 +189,16 @@ a{
 .card-slider-h{
     height: 210px !important;
 }
+.text-box{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.border-custom-left{
+    border-radius: 50px 0 0 50px;
+}
+.border-custom-right {
+    border-radius: 0 50px 50px 0;
+}
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
@@ -213,6 +226,13 @@ a{
     }
     .w-max-content-lg {
         width: unset;
+    }
+    .border-custom-left {
+        border-radius: 50px 50px 0 0 ;
+    }
+
+    .border-custom-right {
+        border-radius: 0 0 50px 50px;
     }
 }
 @media(max-width: 768px){
