@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZFN</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid py-2 d-lg-block d-none bg-corp text-white">
+            <div class="row gx-lg-2 gx-xxl-0">
+                <div class="col-lg-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="icons/logo.svg" alt="Logo" class="img-fluid onject-fit-cover logo">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="w-100 h-100 d-flex align-items-center">
+                        <div class="row justify-content-between align-items-center w-100 gx-lg-2">
+                            <div class="col-xxl-4 col-5">
+                                <a href="tel:+998909000909" class="fw-light"> <i class="bi bi-telephone me-1"></i> + 998
+                                    90 900 09 09</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <address class="mb-0">
+                                    <span><i class="bi bi-geo-alt me-2"></i>г. Ташкент</span>
+                                </address>
+                            </div>
+                            <div class=" col-lg-3 col-xxl-2">
+                                <a href="#">
+                                    <i class="bi bi-globe me-2"></i>zerofivenine.uz</a>
+                            </div>
+                            <div class=" col-lg-1 col-md-6">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle fw-medium" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        РУ <i class="bi bi-chevron-down ms-1"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">EN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark-nav">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand d-lg-none d-inline-block" href="index.html">
+                    <img src="icons/logo.svg" alt="Logo" class="logo">
+                </a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row w-100">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="collapse navbar-collapse w-100" id="navbarNav">
+                            <ul class="navbar-nav ff-mont justify-content-between w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#catalog">Каталог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#newItems">Новинки</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="news.html">Новости компании</a>
+                                </li>
+                            </ul>
+                            <div class="dropdown d-lg-none d-block">
+                                <a class=" dropdown-toggle nav-link text-decoration-none" href="#" role="button"
+                                    id="dropdownMenuLink-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    РУ <i class="bi bi-chevron-down ms-1"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-2">
+                                    <li><a class="dropdown-item" href="#">EN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4 d-lg-block d-none">
+                        <div class="w-100 h-100 d-flex justify-content-end align-items-center">
+                            <div class="input-group search-form">
+                                <input type="text" class="form-control border-0" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2">
+                                <button class="btn bg-white py-0" type="button" id="button-addon2"><i
+                                        class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100">
+                            <aside class="catalog bordered-top">
+                                <p class="px-4 bg-corp text-white py-2 bordered-top mb-0">Каталог</p>
+                                <ul class="list-unstyled border">
+                                    <li class="border-bottom px-2 py-2">
+                                        <div class="btn-group dropend d-lg-block d-none">
+                                            <a href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Установки для промывки глаз
+                                            </a>
+                                            <ul class="dropdown-menu py-0 w-max-content-lg rounded-0 custom-transform">
+                                                <li class="px-2 border-bottom py-2"><a
+                                                        href="washing-showers.html">Системы промывания и
+                                                        обеззараживающие души</a></li>
+                                                <li class="px-2 border-bottom py-2"><a
+                                                        href="portative-washing.html">Портативные системы промывания
+                                                        глаз</a></li>
+                                                <li class="px-2 py-2"><a href="wall-washers.html">Настенные промыватели
+                                                        и подставки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown d-lg-none d-block">
+                                            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Установки для промывки глаз
+                                            </a>
+
+                                            <ul class="dropdown-menu py-0 w-max-content-lg rounded-0">
+                                                <li class="px-2 border-bottom py-2"><a
+                                                        href="washing-showers.html">Системы промывания и
+                                                        обеззараживающие души</a></li>
+                                                <li class="px-2 border-bottom py-2"><a
+                                                        href="portative-washing.html">Портативные системы промывания
+                                                        глаз</a></li>
+                                                <li class="px-2 py-2"><a href="wall-washers.html">Настенные промыватели
+                                                        и подставки</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="border-bottom px-2 py-2"><a href="locks.html">Установки для блокировки
+                                            (замки)</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="soldering-iron.html">Паяльники,
+                                            зажимы</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="grounding-systems.html">Системы для
+                                            заземления</a></li>
+                                    <li class="border-bottom px-2 py-2"><a
+                                            href="lightning-protection-systems.html">Системы молниезащиты</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="cable-clamps.html">Кабельные зажимы и
+                                            хомуты</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="drag-lower-systems.html">Системы
+                                            снижения сопротивления</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="rescue-tripod.html">Спасательный
+                                            штатив</a></li>
+                                    <li class="border-bottom px-2 py-2"><a href="individual-protection.html">Средства
+                                            индивид. защиты</a></li>
+                                    <li class="px-2 py-2"><a href="petrolean-elumination.html">Ликвидация
+                                            нефтепродуктов</a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-lg-9">
+                        <div class="w-100 h-100">
+                            <div class="position-relative">
+                                <img src="images/home-page/banner-img.png" alt=""
+                                    class="img-fluid object-fit-cover w-100 d-sm-block d-none">
+                                <img src="images/home-page/banner-img-mobile.png" alt=""
+                                    class="img-fluid object-fit-cover w-100 d-sm-none d-block">
+                                <div
+                                    class="position-absolute banner-info-box ps-md-5 pe-md-0 px-3 py-sm-5 py-3 d-flex flex-column justify-content-between">
+                                    <h3 class="text-white fs-title fw-medium text-balance">
+                                        Установки для промывки глаз
+                                    </h3>
+                                    <a href="washing-showers.html" class="btn btn-primary">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newItems" class="py-lg-5 py-3">
+            <div class="container-fluid">
+                <h3 class="fs-section-title fw-bold text-corp mb-lg-5 mb-3">
+                    Системы промывания и обеззараживающие души
+                </h3>
+                <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-5">
+                    <div class="col">
+                        <a href="item-card-1.html" class="d-block w-100 h-100 position-relative catalog-link">
+                            <img src="images/eye-washing-pages/showers/1.png" alt=""
+                                class="img-fluid object-fit-cover w-100">
+                            <div
+                                class="position-absolute catalog-info-box catalog-info-box-height catalog-info-hover fw-light px-1 py-2 rounded-2 w-100 d-flex align-items-center justify-content-center">
+                                <p class="mb-0 fs-paragraph four-line text-balance text-center lh-1">
+                                    Комбинированный промыватель глаз и душ из АБС-пластика BD-510
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="item-card-1.html" class="d-block w-100 h-100 position-relative catalog-link">
+                            <img src="images/eye-washing-pages/showers/2.png" alt=""
+                                class="img-fluid object-fit-cover w-100">
+                            <div
+                                class="position-absolute catalog-info-box catalog-info-box-height catalog-info-hover fw-light px-1 py-2 rounded-2 w-100 d-flex align-items-center justify-content-center">
+                                <p class="mb-0 fs-paragraph four-line text-balance text-center lh-1">
+                                    Высшая из нержавеющей стали Комбинация для промывки глаз и душ BD-530
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="item-card-1.html" class="d-block w-100 h-100 position-relative catalog-link">
+                            <img src="images/eye-washing-pages/showers/3.png" alt=""
+                                class="img-fluid object-fit-cover w-100">
+                            <div
+                                class="position-absolute catalog-info-box catalog-info-box-height catalog-info-hover fw-light px-1 py-2 rounded-2 w-100 d-flex align-items-center justify-content-center">
+                                <p class="mb-0 fs-paragraph four-line text-balance text-center lh-1">
+                                    Комбинированное средство для промывания глаз и душа BD-550А
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="item-card-1.html" class="d-block w-100 h-100 position-relative catalog-link">
+                            <img src="images/eye-washing-pages/showers/4.png" alt=""
+                                class="img-fluid object-fit-cover w-100">
+                            <div
+                                class="position-absolute catalog-info-box catalog-info-box-height catalog-info-hover fw-light  px-1 py-2 rounded-2 w-100 d-flex align-items-center justify-content-center">
+                                <p class="mb-0 fs-paragraph four-line text-balance text-center lh-1">
+                                    Комбинированное средство для промывания глаз и душа BD-550B
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination mt-5 d-flex justify-content-center">
+                    <ul class="pagination w-fit-content">
+                        <li class="me-4"><a class="pagination-link active" href="#">1</a></li>
+                        <li class="me-4" aria-current="page">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="me-4" aria-current="page">
+                            <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="me-4" aria-current="page">
+                            <a class="pagination-link" href="#">4</a>
+                        </li>
+                        <li class="me-4" aria-current="page">
+                            <a class="pagination-link" href="#">...</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-corp py-lg-5 py-3 text-white">
+        <div class="container-fluid">
+            <div class="row justify-content-center gy-4">
+                <div class="col-lg-3 col-6">
+                    <div class="w-100 h-100 d-flex justify-content-center">
+                        <img src="icons/footer-logo.svg" alt="" class="img-fluid footer-logo">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                        <div class="row justify-content-between w-100 gy-4">
+                            <div class="col-xl-2 col-lg-6">
+                                <div
+                                    class="w-100 h-100 fs-paragraph-2 d-flex justify-content-lg-start justify-content-center text-lg-start text-center">
+                                    <ul class="list-unstyled w-fit-content mb-0">
+                                        <li class="mb-2">
+                                            <a href="about.html" class="">О компании</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#catalog" class="">Каталог</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="news.html" class="">Новости компании</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="w-100 h-100 fs-paragraph-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li
+                                            class="mb-2 d-flex align-items-center justify-content-lg-start justify-content-center">
+                                            <i class="bi bi-telephone fs-5"></i>
+                                            <div class="ms-3">
+                                                <a href="tel:+998983648877" class="d-block">+998 98 364 88 77</a>
+                                                <a href="tel:+998988888877" class="d-block">+998 98 888 88 77</a>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex align-items-center text-lg-start text-center justify-content-lg-start justify-content-center">
+                                            <i class="bi bi-geo-alt me-3 fs-5"></i>
+                                            <address class="mb-0">
+                                                <span>г. Ташкент Мирзо-Улугбекский район, Дурмон Йули 52</span>
+                                            </address>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div
+                                    class="w-100 h-100 fs-paragraph-2 d-flex justify-content-lg-start justify-content-center">
+                                    <ul
+                                        class="d-flex flex-column justify-content-between h-100 list-unstyled w-fit-content">
+                                        <li class="mb-2">
+                                            <a href="mailto:info@zerofivenine.uz" class=""><i
+                                                    class="bi bi-envelope me-3 fs-5"></i>info@zerofivenine.uz</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#">
+                                                <i class="bi bi-globe me-3 fs-5"></i>zerofivenine.uz</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

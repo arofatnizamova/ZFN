@@ -199,6 +199,22 @@ a{
 .border-custom-right {
     border-radius: 0 50px 50px 0;
 }
+.catalog-info-hover{
+    background: var(--color-dark-grey);
+    color: white;
+    transition: all 0.3s ease;
+}
+.catalog-info-hover:hover{
+    background: var(--color-corp);
+}
+.pagination-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+.pagination-link.active{
+    color: var(--color-corp);
+}
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
