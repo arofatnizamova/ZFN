@@ -5,6 +5,7 @@
     --color-corp: #046381;
     --color-dark-grey: #3a3a3a;
     --color-light-grey: #F6F6F6;
+    --color-darker-grey: #E7E7E7;
     --color-light-blue: rgba(163, 188, 197, 0.5);
 }
 body{
@@ -30,8 +31,21 @@ a{
 .bg-light-grey{
     background: var(--color-light-grey);
 }
+.bg-lg-light-grey{
+    background: #E7E7E7;
+}
+.bg-darker-grey{
+    background-color: var(--color-darker-grey);
+}
+.bg-lg-darker-grey {
+    background-color: var(--color-darker-grey);
+}
 .bg-light-blue{
     background: var(--color-light-blue);
+}
+.bg-lg-corp{
+    background: var(--color-corp);
+    color: white;
 }
 .text-corp{
     color: var(--color-corp);
@@ -51,6 +65,7 @@ a{
 .fs-paragraph-3{
     font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
 }
+
 .fs-section-title{
     font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
 }
@@ -219,14 +234,14 @@ a{
 .pagination-link.active{
     color: var(--color-corp);
 }
-.form-control{
+form .form-control{
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: unset;
     background-color: transparent;
     padding: .375rem 0;
 }
-.form-control:focus {
+form .form-control:focus {
     background-color: transparent;
     border-color: var(--color-corp);
     outline: 0;
@@ -250,7 +265,12 @@ a{
 .form-check-input:checked[type=checkbox] {
     --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m5 10 4 4 6-6'/%3e%3c/svg%3e");
 }
-
+.border-custom-left-2{
+    border-radius: 16px 0 0 16px;
+}
+.border-custom-right-2 {
+    border-radius: 0 16px 16px 0;
+}
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
@@ -294,6 +314,24 @@ a{
     .h-md-300 {
         height: 300px;
     }
+    .border-bottom-md{
+        border-bottom: 1px solid white;
+    }
+        .border-custom-left-2 {
+            border-radius: 0;
+        }
+    
+        .border-custom-right-2 {
+            border-radius: 0;
+        }
+                .bg-lg-corp {
+                    background: #E7E7E7;
+                    color: black;
+                }
+        .bg-lg-darker-grey {
+            background-color: var(--color-corp);
+            color: white;
+        }
 }
 @media(max-width: 576px) {
     .container-fluid {
@@ -331,6 +369,9 @@ a{
 }  
    .form-check-label{
     font-size: 12px;
+   }
+   .breadcrumb-item a, .breadcrumb-item{
+       font-size: 14px;
    }
     
 }
