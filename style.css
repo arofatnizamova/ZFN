@@ -65,6 +65,9 @@ a{
 .fs-paragraph-3{
     font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
 }
+.fs-span{
+    font-size: 14px;
+}
 
 .fs-section-title{
     font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
