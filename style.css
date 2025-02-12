@@ -99,6 +99,10 @@ a{
 .btn-primary-long{
     padding: 10px 100px;
 }
+.btn-rounded{
+    padding: 5px 70px;
+    border-radius: 20px;
+}
 .dropdown-toggle::after{
     display: none;
 }
@@ -215,6 +219,38 @@ a{
 .pagination-link.active{
     color: var(--color-corp);
 }
+.form-control{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: unset;
+    background-color: transparent;
+    padding: .375rem 0;
+}
+.form-control:focus {
+    background-color: transparent;
+    border-color: var(--color-corp);
+    outline: 0;
+    box-shadow: unset;
+}
+.form-control::placeholder{
+    opacity: 0.7;
+}
+.form-check-input:focus {
+    border: 2px solid black;
+    outline: 0;
+    box-shadow: none;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 2px;
+}
+.form-check-input:checked {
+    background-color: transparent;
+    border-color: unset;
+}
+.form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m5 10 4 4 6-6'/%3e%3c/svg%3e");
+}
+
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
@@ -289,6 +325,13 @@ a{
     .catalog-info-box-height {
         height: 80px;
     }
+    .form-control::placeholder{
+    opacity: 0.7;
+    font-size: 12px;
+}  
+   .form-check-label{
+    font-size: 12px;
+   }
     
 }
 @media(max-width: 420px) {
