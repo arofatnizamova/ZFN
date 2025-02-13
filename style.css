@@ -165,9 +165,6 @@ a{
     transform: unset !important;
     inset: 0px auto auto 105% !important;
 }
-.catalog-link{
-    overflow: hidden;
-}
 .catalog-link img {
     transition: all 0.3s ease;
 }
@@ -175,7 +172,7 @@ a{
     transform: scale(1.1);
 }
 .catalog-info-box{
-    bottom: 0;
+    bottom: 0px;
     z-index: 2;
 }
 .catalog-info-box-height{
@@ -229,6 +226,22 @@ a{
 .catalog-info-hover:hover{
     background: var(--color-corp);
 }
+.text-default{
+    transition: all 0.3s ease;
+}
+.catalog-info-hover:hover .text-default{
+    opacity: 0;
+}
+.catalog-info-hover:hover .text-hover {
+    opacity: 1;
+}
+.text-hover {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
 .pagination-link{
     font-size: 16px;
     font-weight: 600;
@@ -274,6 +287,8 @@ form .form-control:focus {
 .border-custom-right-2 {
     border-radius: 0 16px 16px 0;
 }
+
+
 /*breackpoints*/
 @media(max-width: 1650px){
     .container-fluid {
